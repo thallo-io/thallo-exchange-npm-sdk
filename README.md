@@ -1,1 +1,2 @@
-# thallo-exchange-npm-sdk
+# Thallo Exchange NPM SDK
+## Coming soon in July 2023...
