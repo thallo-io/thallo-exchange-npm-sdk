@@ -1,6 +1,6 @@
 {
   "name": "@thallo.io/thallo-exchange-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The Thallo Exchange NPM SDK allows developers to easily set up and integrate with the Thallo Api",
   "main": "lib/index.js",
   "types": "./lib/types/index.d.ts",
@@ -19,6 +19,7 @@
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags",
+    "test": "jest --config jestconfig.json",
     "common:package:json": "cp package.json ./lib/cjs && cd ./lib/cjs && npm pkg delete type scripts devDependencies dependencies peerDependencies exports types && cd -",
     "esm:package:json": "cp package.json ./lib/esm && cd ./lib/esm && npm pkg delete scripts devDependencies dependencies peerDependencies exports types && npm pkg set type=module && cd -"
   },
@@ -32,6 +33,10 @@
   ],
   "author": "Thallo",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thallo-io/thallo-exchange-npm-sdk"
+  },
   "devDependencies": {
     "@types/jest": "^29.5.2",
     "@types/lodash": "^4.14.195",
