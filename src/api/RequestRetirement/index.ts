@@ -1,1 +1,1 @@
-export * from './RequestRetirementApi'
+export * from './RequestRetirementApi.js'

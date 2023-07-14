@@ -1,5 +1,5 @@
-import { RequestPaginationResponseData } from '../../../../common/types/RequestPaginationResponseData'
-import { RequestMarketDataProject } from './RequestMarketDataProject'
+import { RequestPaginationResponseData } from '../../../../common/types/RequestPaginationResponseData.js'
+import { RequestMarketDataProject } from './RequestMarketDataProject.js'
 
 export interface RequestGetMarketDataResponse {
     projects: RequestMarketDataProject[]

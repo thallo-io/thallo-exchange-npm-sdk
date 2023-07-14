@@ -1,4 +1,4 @@
-import { MarketDataSellOrder } from './MarketDataSellOrder'
+import { MarketDataSellOrder } from './MarketDataSellOrder.js'
 
 export interface MarketDataVintage {
     vintageId: string

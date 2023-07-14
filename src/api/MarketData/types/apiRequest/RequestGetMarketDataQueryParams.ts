@@ -1,3 +1,3 @@
-import { RequestPaginationQueryParams } from '../../../../common/types/RequestPaginationQueryParams'
+import { RequestPaginationQueryParams } from '../../../../common/types/RequestPaginationQueryParams.js'
 
 export interface GetMarketDataQueryParams extends RequestPaginationQueryParams {}

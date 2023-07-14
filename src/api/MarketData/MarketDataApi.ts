@@ -1,6 +1,6 @@
 import { ApiService } from '../../utils/ApiService.js'
-import { GetMarketDataQueryParams } from './types/GetMarketDataQueryParams'
-import { GetMarketDataResponse } from './types/GetMarketDataResponse'
+import { GetMarketDataQueryParams } from './types/GetMarketDataQueryParams.js'
+import { GetMarketDataResponse } from './types/GetMarketDataResponse.js'
 import { RequestGetMarketDataResponse } from './types/apiRequest/RequestGetMarketDataResponse.js'
 
 export class MarketDataApi {
