@@ -1,0 +1,30 @@
+{
+    "cSpell.words": [
+        "azuretools",
+        "bcservice",
+        "dbaeumer",
+        "dbmigrate",
+        "devcontainer",
+        "ENDC",
+        "esbenp",
+        "exchangebe",
+        "fiatservice",
+        "kycservice",
+        "nestjs",
+        "OKBLUE",
+        "OKCYAN",
+        "OKGREEN",
+        "postgresdata",
+        "uiapi"
+    ],
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "prettier.prettierPath": "./node_modules/prettier",
+    "workbench.colorCustomizations": {
+        "activityBar.activeBorder": "#ebd3d9"
+    },
+    "peacock.color": "#6376b8",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    }
+}
