@@ -7,19 +7,19 @@ The Thallo Exchange NPM SDK allows developers to easily set up and integrate wit
 ## Getting started
 
 1. Install the library
-   `npm i thallo-exchange-sdk`
+   `npm i @thallo.io/thallo-exchange-sdk`
 
 2. Import the library:
 
     - Using TS and ESM module:
 
         ```ts
-        import { ThalloApiSdk } from 'thallo-exchange-sdk'
+        import { ThalloApiSdk } from '@thallo.io/thallo-exchange-sdk'
         ```
 
     - CommonJS module:
         ```js
-        const { ThalloApiSdk } = require('thallo-exchange-sdk')
+        const { ThalloApiSdk } = require('@thallo.io/thallo-exchange-sdk')
         ```
 
 3. Create an instance of the Thallo Api Sdk client using your [Api key](https://docs.market.thallo.io/#thallo-account-and-api-key) and base url:
