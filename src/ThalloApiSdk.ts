@@ -1,3 +1,4 @@
+import { InventoryApi } from './api/Inventory/InventoryApi.js'
 import { MarketDataApi } from './api/MarketData/index.js'
 import { ProjectDataApi } from './api/ProjectData/index.js'
 import { RequestRetirementApi } from './api/RequestRetirement/index.js'
@@ -9,6 +10,7 @@ export class ThalloApiSdk {
     public requestRetirement: RequestRetirementApi
     public marketData: MarketDataApi
     public projectData: ProjectDataApi
+    public inventory: InventoryApi
 
     constructor(initLibraryParams: InitLibraryParams) {
         this.apiService = new ApiService({
@@ -18,5 +20,6 @@ export class ThalloApiSdk {
         this.requestRetirement = new RequestRetirementApi(this.apiService)
         this.marketData = new MarketDataApi(this.apiService)
         this.projectData = new ProjectDataApi(this.apiService)
+        this.inventory = new InventoryApi(this.apiService)
     }
 }

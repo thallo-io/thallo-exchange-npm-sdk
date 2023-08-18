@@ -95,6 +95,53 @@ The Thallo Exchange NPM SDK allows developers to easily set up and integrate wit
         }
         ```
 
+-   [Get Inventory data](https://docs.market.thallo.io/api-endpoints/inventory)
+
+    -   Request code example:
+
+        ```ts
+        const response = await thalloApiSdk.inventory.getInventory()
+        ```
+
+    -   Successful response with inventory data and pagination example:
+
+        ```ts
+        {
+            projects: [
+                {
+                    projectId: '003gpwgw7agtv6i9dn',
+                    vintages: [
+                        {
+                            vintageId: '004n6oj3x71236shn2',
+                            wallets: [
+                                {
+                                    type: 'CAAS',
+                                    quantityGrams: 999959n,
+                                    trades: [
+                                        {
+                                            executionDate: '2023-08-18T08:39:35.141Z',
+                                            quantityGrams: 1000000n,
+                                            priceCents: 20n,
+                                            type: 'BUY'
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            pagination: {
+                perPage: 1,
+                totalPages: 11,
+                totalItems: 11,
+                currentPage: 2,
+                previousPage: 1,
+                nextPage: 3
+            }
+        }
+        ```
+
 -   [Get Project data](https://docs.market.thallo.io/api-endpoints/projects):
 
     -   Request code example:
