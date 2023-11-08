@@ -28,10 +28,10 @@ export class ApiService {
         })
     }
 
-    public async getRequest<ResponseType>(
+    public async getRequest<ResponseType, QueryParamsType = any>(
         path: string,
         id: string | null = null,
-        queryParams: any = {},
+        queryParams: QueryParamsType | {} = {},
         config: AxiosRequestConfig<any> = {},
     ): Promise<AxiosPostResponseWrapper<ResponseType>> {
         try {
