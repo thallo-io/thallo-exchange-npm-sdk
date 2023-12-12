@@ -1,6 +1,12 @@
 import { Locations } from '../enums/Locations'
 
 export interface RequestRetirementPayload {
+    /**
+     * @description
+     * When `should_retire_external_customer === true`
+     * this should be a multiple of 1,000,000 as you can only retire
+     * whole tonnes via this mechanism
+     */
     quantityGrams: BigInt
     vintageId: string
     externalRetireeId: string
