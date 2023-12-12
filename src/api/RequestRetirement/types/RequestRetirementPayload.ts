@@ -1,4 +1,4 @@
-import { Locations } from '../enums/Locations'
+import { Locations } from '../enums/Locations.js'
 
 export interface RequestRetirementPayload {
     /**
