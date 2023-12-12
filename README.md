@@ -215,6 +215,10 @@ The Thallo Exchange NPM SDK allows developers to easily set up and integrate wit
             expectedPriceCents: '3000',
             externalId: '8964e68e-8c7d-4d77-9196-66635bf7a340',
             externalRetireeId: '0eb0dc50-2a9a-4289-bf61-fe298172464e',
+            shouldRetireExternalCustomer: false,
+            externalRetireeName: 'Alice Bob',
+            externalRetireeLocation: 'AU',
+            externalRetireeTaxId: '123456789',
         })
         ```
 
