@@ -30,6 +30,10 @@ export class RequestRetirementApi {
             expected_price_cents: requestRetirementPayload.expectedPriceCents
                 ? requestRetirementPayload.expectedPriceCents.toString()
                 : undefined,
+            should_retire_external_customer: requestRetirementPayload.shouldRetireExternalCustomer,
+            external_retiree_name: requestRetirementPayload.externalRetireeName,
+            external_retiree_tax_id: requestRetirementPayload.externalRetireeTaxId,
+            external_retiree_location: requestRetirementPayload.externalRetireeLocation,
         })
         return {
             retirementRequestId: res.data!.retirement_request_id,

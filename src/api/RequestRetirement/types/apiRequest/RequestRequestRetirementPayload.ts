@@ -1,3 +1,5 @@
+import { Locations } from '../../enums/Locations'
+
 export interface RequestRequestRetirementPayload {
     quantity_grams: string
     vintage_id: string
@@ -5,4 +7,20 @@ export interface RequestRequestRetirementPayload {
     external_id: string
     sell_order_id?: string
     expected_price_cents?: string
+    should_retire_external_customer?: boolean
+    /**
+     * @description
+     *  Required when `should_retire_external_customer === true`
+     */
+    external_retiree_name?: string
+    /**
+     * @description
+     *  Required when `should_retire_external_customer === true`
+     */
+    external_retiree_tax_id?: string
+    /**
+     * @description
+     *  Required when `should_retire_external_customer === true`
+     */
+    external_retiree_location?: Locations
 }
