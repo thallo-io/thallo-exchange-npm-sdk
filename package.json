@@ -1,6 +1,6 @@
 {
   "name": "@thallo.io/thallo-exchange-sdk",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "The Thallo Exchange NPM SDK allows developers to easily set up and integrate with the Thallo Api",
   "main": "lib/index.js",
   "types": "./lib/types/index.d.ts",
