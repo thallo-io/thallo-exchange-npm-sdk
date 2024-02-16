@@ -242,36 +242,36 @@ The Thallo Exchange NPM SDK allows developers to easily set up and integrate wit
         {
             id: "00maxwb1x2ltjgh4ob",
             status: "OPEN",
-            total_quantity: "4000100",
+            totalQuantity: "4000100",
             type: "FRACTIONALISED",
-            project_id: "003tcfgf70xwtr1dbc",
-            vintage_id: "004o7rnsz29fptz9uo",
-            created_at: "2024-02-05T10:51:12.319Z",
-            retired_at: null,
-            retired_serial_numbers: null,
-            thallo_proof_of_retirement_certificate_url: null,
-            should_retire_external_customer: false,
-            all_invoices_settled: false,
-            retirement_request_items: [
+            projectId: "003tcfgf70xwtr1dbc",
+            vintageId: "004o7rnsz29fptz9uo",
+            createdAt: 2024-02-05T10:51:12.319Z,
+            retiredAt: undefined,
+            retiredSerialNumbers: undefined,
+            thalloProofOfRetirementCertificateUrl: undefined,
+            shouldRetireExternalCustomer: false,
+            allInvoicesSettled: false,
+            retirementRequestItems: [
                 {
                     id: "00p6y5rap05wpwt7km",
                     quantity: "1000050",
-                    created_at: "2024-02-05T10:51:12.319Z",
-                    retiree_name: "Thallo Ltd",
-                    retiree_tax_id: "123456789",
-                    retiree_country: "GB",
-                    invoice_id: "00iy2jbppp8kwwg7vl",
-                    trade_id: "00gr2tgn2wbq8barqs"
+                    createdAt: 2024-02-05T10:51:12.319Z,
+                    retireeName: "Thallo Ltd",
+                    retireeTaxId: "123456789",
+                    retireeCountry: "GB",
+                    invoiceId: "00iy2jbppp8kwwg7vl",
+                    tradeId: "00gr2tgn2wbq8barqs"
                 },
                 {
                     id: "00pm1b32j6mmj9xgyp",
                     quantity: "3000050",
-                    created_at: "2024-02-05T10:52:28.902Z",
-                    retiree_name: "Thallo Ltd",
-                    retiree_tax_id: "123456789",
-                    retiree_country: "GB",
-                    invoice_id: "00iy2jbppp8kwwg7vl",
-                    trade_id: "00gwapftj8tr7o2s4c"
+                    createdAt: 2024-02-05T10:52:28.902Z,
+                    retireeName: "Thallo Ltd",
+                    retireeTaxId: "123456789",
+                    retireeCountry: "GB",
+                    invoiceId: "00iy2jbppp8kwwg7vl",
+                    tradeId: "00gwapftj8tr7o2s4c"
                 }
             ]
         }
