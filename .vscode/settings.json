@@ -20,11 +20,24 @@
     "typescript.tsdk": "node_modules/typescript/lib",
     "prettier.prettierPath": "./node_modules/prettier",
     "workbench.colorCustomizations": {
-        "activityBar.activeBorder": "#ebd3d9"
+        "activityBar.activeBorder": "#ebd3d9",
+        "activityBar.activeBackground": "#8695c8",
+        "activityBar.background": "#8695c8",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#ebd3d9",
+        "activityBarBadge.foreground": "#15202b",
+        "statusBar.background": "#6376b8",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#8695c8",
+        "titleBar.activeBackground": "#6376b8",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#6376b899",
+        "titleBar.inactiveForeground": "#e7e7e799"
     },
     "peacock.color": "#6376b8",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-        "source.organizeImports": true
+        "source.organizeImports": "explicit"
     }
 }

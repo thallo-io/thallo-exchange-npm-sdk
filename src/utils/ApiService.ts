@@ -28,7 +28,7 @@ export class ApiService {
         })
     }
 
-    public async getRequest<ResponseType, QueryParamsType = any>(
+    public async getRequest<ResponseType, QueryParamsType = any, ResponseErrorType = any>(
         path: string,
         id: string | null = null,
         queryParams: QueryParamsType | {} = {},
