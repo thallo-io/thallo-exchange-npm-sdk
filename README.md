@@ -227,7 +227,7 @@ The Thallo Exchange NPM SDK allows developers to easily set up and integrate wit
         ```ts
         { retirementRequestId: '00maxwb1x2ltjgh4ob', externalIdAlreadyProcessed: false }
         ```
-    
+
 -   [Get Retirement details](https://docs.market.thallo.io/api-endpoints/caas/retirementrequest).
 
     -   Request code sample:
@@ -247,7 +247,6 @@ The Thallo Exchange NPM SDK allows developers to easily set up and integrate wit
             project_id: "003tcfgf70xwtr1dbc",
             vintage_id: "004o7rnsz29fptz9uo",
             created_at: "2024-02-05T10:51:12.319Z",
-            updated_at: "2024-02-05T10:52:28.902Z",
             retired_at: null,
             retired_serial_numbers: null,
             thallo_proof_of_retirement_certificate_url: null,

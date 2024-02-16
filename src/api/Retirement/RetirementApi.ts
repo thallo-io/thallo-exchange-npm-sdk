@@ -1,6 +1,7 @@
-import { RetirmentExceptionType } from '../../common/types/index.js'
+import { RetirementExceptionType } from '../../common/types/index.js'
 import { ApiService } from '../../utils/ApiService.js'
 import {
+    RetirementItem,
     RetirementItemResponse,
     RetirementRequest,
     RetirementRequestQueryParams,
@@ -20,35 +21,34 @@ export class RetirementApi {
         const response = await this.apiService.getRequest<
             RetirementRequestResponse,
             RetirementRequestQueryParams,
-            RetirmentExceptionType
+            RetirementExceptionType
         >(this.path, null, { id })
         const retirement = response.data!
         return {
             id: retirement.id,
             status: retirement.status,
-            total_quantity: BigInt(retirement.total_quantity),
+            totalQuantity: BigInt(retirement.total_quantity),
             type: retirement.type,
-            project_id: retirement.project_id,
-            vintage_id: retirement.vintage_id,
-            created_at: retirement.created_at,
-            updated_at: retirement.updated_at,
-            retired_at: retirement.retired_at,
-            retired_serial_numbers: retirement.retired_serial_numbers,
-            thallo_proof_of_retirement_certificate_url:
+            projectId: retirement.project_id,
+            vintageId: retirement.vintage_id,
+            createdAt: new Date(retirement.created_at),
+            retiredAt: retirement.retired_at ? new Date(retirement.retired_at) : undefined,
+            retiredSerialNumbers: retirement.retired_serial_numbers,
+            thalloProofOfRetirementCertificateUrl:
                 retirement.thallo_proof_of_retirement_certificate_url,
-            should_retire_external_customer: retirement.should_retire_external_customer,
-            all_invoices_settled: retirement.all_invoices_settled,
-            retirement_request_items: retirement.retirement_request_items.map(
-                (item: RetirementItemResponse) => {
+            shouldRetireExternalCustomer: retirement.should_retire_external_customer,
+            allInvoicesSettled: retirement.all_invoices_settled,
+            retirementRequestItems: retirement.retirement_request_items.map(
+                (item: RetirementItemResponse): RetirementItem => {
                     return {
                         id: item.id,
                         quantity: BigInt(item.quantity),
-                        created_at: item.created_at,
-                        retiree_name: item.retiree_name,
-                        retiree_tax_id: item.retiree_tax_id,
-                        retiree_country: item.retiree_country,
-                        invoice_id: item.invoice_id,
-                        trade_id: item.trade_id,
+                        createdAt: new Date(item.created_at),
+                        retireeName: item.retiree_name,
+                        retireeTaxId: item.retiree_tax_id,
+                        retireeCountry: item.retiree_country,
+                        invoiceId: item.invoice_id,
+                        tradeId: item.trade_id,
                     }
                 },
             ),
